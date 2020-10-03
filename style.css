@@ -1,0 +1,189 @@
+
+body{ 
+    font-family:'Source Code Pro', monospace;
+    background: #131313;
+    color: #fff;
+}
+
+h1{
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 15px;
+    margin-left: 8vh;
+}
+
+h1 span{
+    color:  #FF0000;
+}
+
+hr{
+    background-color: #fff;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content hr{
+    background-color: #000;
+    height: 1px;
+}
+
+.sideBar{
+    width: 40vh;
+    height: 80vh;
+    background-color: #171717;
+    margin-left: 2vh;
+    border-radius: 35px;
+}
+
+.sideBar h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.information{
+    position: relative;
+    width:100%;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+.information h3{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+.updater{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.number{
+    font-size: 45px;
+    font-size: 700;
+}
+
+.cases{
+    background-color: #171717;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 36px;
+      color: #FFF500;
+}
+.dotCase {
+    height: 10px;
+    width: 10px;
+    background-color: #FFF500;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.deathToll{
+    background-color: #171717;
+    color: #FF0000;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 36px;
+}
+
+.dotDeath{
+    height: 10px;
+    width: 10px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+
+.recovery{
+    background-color: #171717;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 36px;
+    color: #00FF00;
+}
+.dotRecover{
+    height: 10px;
+    width: 10px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#countyTitle{
+    margin-top: 3vh;
+}
+
+#countyChanger{
+    display: inline-block;
+}
+
+.btn{
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    width: 300px;
+}
+
+.selection{
+    width: 100%;
+    color: #fff;
+    background: #131313;
+    border: none;
+}
+@media only screen and (min-device-width:320px) and 
+(max-device-width:640px){
+    .sideBar{
+        width:auto;
+        height: auto;
+        background-color: #171717;
+        overflow: hidden;
+        padding: 15px;
+    }
+    hr{
+        width: 100%;
+    }
+    .sideBar h4{
+        text-align: center;
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    h5{
+        padding-top: 15px;
+        padding-right: 15px;
+   text-align: center;
+    }
+    p{
+        padding:10px 10px 10px 15px;
+        font-size: 35px;
+    }
+    h1{
+    margin-left: 10px;
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 15px;
+    }
+    .updater{
+        justify-content: space-around;
+        /*flex-flow: column;*/
+        
+    }
+    .cases, .deathToll,.recovery{
+        margin:10px;
+    }
+
+    
+}

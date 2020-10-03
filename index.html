@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>COVID-19 Tracker</title>
+</head>
+<body>
+    <h1><span>COVID-19</span> Tracker: MARYLAND</h1>
+    <hr>
+
+    <div class="content">
+        <div class="sideBar">
+          
+            <h4>About COVID19</h4>
+            <h5> What is Corona Virus?</h5>
+
+            <p style="font-size: 15px;">
+                Coronavirus disease 2019 (COVID-19) is a respiratory illness that can spread from person to person. 
+                The virus that causes COVID-19 is a novel coronavirus that was first identified during an investigation into an outbreak in Wuhan, China.</br>
+                The virus that causes COVID-19 probably emerged from an animal source, but is now spreading from person to person.
+                </p>
+        </div>
+        <div class="information">
+            <h3><b>Maryland Stats</b></h3>
+            <div class="updater">
+                <div class="cases">
+                    <h3 style="color: white;"><span class="dotCase"></span> <b>CASES</b></h3>
+                    <hr>
+                    <p id="cases" class="number"></p>
+                </div>
+                <div class="deathToll">
+                    <h3 style="color: white;"><span class="dotDeath"></span> <b>DEATHS</b></h3>
+                    <hr>
+                    <p id="death-toll" class="number"></p>
+                </div>
+                <div class="recovery">
+                    <h3 style="color: white;"><span class="dotRecover"></span> <b>RECOVERED</b></h3>
+                    <hr>
+                    <p id="recovery" class="number"></p>
+                </div>
+            </div>
+
+            <h3 id="countyTitle"><b>By County</b></h3>
+            
+            <div class="updater" id="countyChanger">
+                <div class="btn">
+                    <select class="selection">
+                        <option value="" selected>-----</option>
+                        <option value="Allgany">Allegany County</option>
+                        <option value="Anne Arundel">Anne Arundel County</option>
+                        <option value="Baltimore">Baltimore County</option>
+                        <option value="Baltimore City">Baltimore City</option>
+                        <option value="Calvert">Calvert County</option>
+                        <option value="Caroline">Caroline County</option>
+                        <option value="Carroll">Carroll County</option>
+                        <option value="Cecil">Cecil County</option>
+                        <option value="Charles">Charles County</option>
+                        <option value="Dorchester">Dorchester County</option>
+                        <option value="Frederick">Frederick County</option>
+                        <option value="Garrett">Garrett County</option>
+                        <option value="Harford">Harford County</option>
+                        <option value="Howard">Howard County</option>
+                        <option value="Kent">Kent County</option>
+                        <option value="Montgomery">Montgomery County</option>
+                        <option value="Prince George's">Prince George's County</option>
+                        <option value="Queen Anne's">Queen Anne's County</option>
+                        <option value="Somerset">Somerset County</option>
+                        <option value="St. Mary's">St. Mary's County</option>
+                        <option value="Talbot">Talbot County</option>
+                        <option value="Washington">Washington County</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="updater">
+                <div class="cases">
+                    <h3 style="color: white;"><span class="dotCase"></span> <b>CASES</b></h3>
+                    <hr>
+                    <p id="casesInCounty" class="number">0</p>
+                </div>
+                <div class="deathToll">
+                    <h3 style="color: white;"><span class="dotDeath"></span> <b>DEATHS</b></h3>
+                    <hr>
+                    <p id="death-tollInCounty" class="number">0</p>
+                </div>
+                <div class="recovery">
+                    <h3 style="color: white;"><span class="dotRecover"></span> <b>RECOVERED</b></h3>
+                    <hr>
+                    <p id="recoveryInCounty" class="number">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
